@@ -13,16 +13,17 @@ A Motoko library to convert any [Candid](https://github.com/dfinity/candid) data
   ```
     let
   additions =
-      [{ name = "candid_stringify"
-      , repo = "https://github.com/ORIGYN-SA/candid_stringify"
-      , version = "v0.0.1"
-      , dependencies = ["base", "candid", "xtended-numbers", "itertools"] : List Text
+      [{ 
+        name = "candid_stringify", 
+        version = "v0.0.1", 
+        repo = "https://github.com/ORIGYN-SA/candid_stringify", 
+        dependencies = ["base", "candid", "xtended-numbers", "itertools"] : List Text
       }] : List Package
   ```
 * Add candid_stringify to your `vessel.dhall`
   
   ```
-  dependencies = [ ..., "canistergeek" ],
+  dependencies = [ ..., "candid_stringify" ],
   ```
 * Import library in your canister
   
