@@ -6,6 +6,23 @@ A Motoko library to convert any [Candid](https://github.com/dfinity/candid) data
 
 ## Install
 
+#### Option 1 :
+
+* Install [Mops](https://j4mwm-bqaaa-aaaam-qajbq-cai.ic0.app/#/docs/install)
+* Run `mops add candid_stringify` in your project directory
+* Make sure you add mops to your `dfx` file
+  ```
+  ...
+  "defaults": {
+  "build": {
+    "packtool": "mops sources"
+  }
+},
+...
+```
+
+#### Option 2 :
+
 **Vessel** is a package manager for Motoko. [Learn More.](https://github.com/dfinity/vessel#getting-started)
 
 * Add candid_stringify to your `package-set.dhall`
