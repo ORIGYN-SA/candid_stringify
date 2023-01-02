@@ -11,13 +11,13 @@ A Motoko library to convert any [Candid](https://github.com/dfinity/candid) data
 * Install [Mops](https://j4mwm-bqaaa-aaaam-qajbq-cai.ic0.app/#/docs/install)
 * Run `mops add candid_stringify` in your project directory
 * Make sure you add mops to your `dfx` file
-  ```
-  ...
+```
+...
   "defaults": {
-  "build": {
-    "packtool": "mops sources"
-  }
-},
+    "build": {
+      "packtool": "mops sources"
+    }
+  },
 ...
 ```
 
