@@ -1,6 +1,6 @@
 [package]
 name = "candid_stringify"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Motoko library to convert any Candid data to a string"
 repository = "https://github.com/ORIGYN-SA/candid_stringify"
 
