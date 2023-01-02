@@ -1,0 +1,11 @@
+[package]
+name = "candid_stringify"
+version = "0.1.0"
+description = "A Motoko library to convert any Candid data to a string"
+repository = "https://github.com/ORIGYN-SA/candid_stringify"
+
+[dependencies]
+base = "https://github.com/dfinity/motoko-base#moc-0.7.4"
+candid = "https://github.com/gekctek/motoko_candid#main"
+xtended-numbers = "https://github.com/gekctek/motoko_numbers#v1.0.0"
+itertools = "https://github.com/NatLabs/Itertools#master"
