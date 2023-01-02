@@ -6,10 +6,9 @@ A Motoko library to convert any [Candid](https://github.com/dfinity/candid) data
 
 ## Install
 
-#### Option 1 :
-
 * Install [Mops](https://j4mwm-bqaaa-aaaam-qajbq-cai.ic0.app/#/docs/install)
-* Run `mops add candid_stringify` in your project directory
+* Run `mops add candid_stringify` in your project directory.
+* Run `mops add base candid itertools xtended-numbers` to install dependencies.
 * Make sure you add mops to your `dfx` file
 ```
 ...
@@ -20,33 +19,6 @@ A Motoko library to convert any [Candid](https://github.com/dfinity/candid) data
   },
 ...
 ```
-
-#### Option 2 :
-
-**Vessel** is a package manager for Motoko. [Learn More.](https://github.com/dfinity/vessel#getting-started)
-
-* Add candid_stringify to your `package-set.dhall`
-  
-  ```
-    let
-  additions =
-      [{ 
-        name = "candid_stringify", 
-        version = "v0.0.1", 
-        repo = "https://github.com/ORIGYN-SA/candid_stringify", 
-        dependencies = ["base", "candid", "xtended-numbers", "itertools"] : List Text
-      }] : List Package
-  ```
-* Add candid_stringify to your `vessel.dhall`
-  
-  ```
-  dependencies = [ ..., "candid_stringify" ],
-  ```
-* Import library in your canister
-  
-  ```
-  import C "mo:candid_stringify/candid_stringify";
-  ```
 
 ## Usage
 
