@@ -1,4 +1,4 @@
 {
-  dependencies = [ "candid", "xtended-numbers", "itertools" ],
+  dependencies = [ "base", "candid", "xtended-numbers", "itertools" ],
   compiler = None Text
 }
